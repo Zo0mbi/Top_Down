@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/mysticWood/mystic_woods_free_v0.2/sprites/tilesets/plains.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Joueur.tscn" type="PackedScene" id=2]
+
+[sub_resource type="TileSet" id=1]
+0/name = "plains.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 96, 128 )
+0/tile_mode = 2
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[node name="Niveau" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 65537, 1, 0, 65538, 2, 0, 65538, 3, 0, 65539, 65536, 0, 65537, 65537, 0, 65538, 65538, 0, 65538, 65539, 0, 65539, 131072, 0, 65537, 131073, 0, 65538, 131074, 0, 65538, 131075, 0, 65539, 196608, 0, 65537, 196609, 0, 65538, 196610, 0, 65538, 196611, 0, 65539, 262144, 0, 65537, 262145, 0, 65538, 262146, 0, 65538, 262147, 0, 65539, 327680, 0, 65537, 327681, 0, 65538, 327682, 0, 65538, 327683, 0, 65539, 393216, 0, 65537, 393217, 0, 65538, 393218, 0, 65538, 393219, 0, 65539, 458752, 0, 65537, 458753, 0, 65538, 458754, 0, 65538, 458755, 0, 65539, 524288, 0, 65537, 524289, 0, 65538, 524290, 0, 65538, 524291, 0, 65540, 524292, 0, 3, 589824, 0, 65537, 589825, 0, 65538, 589826, 0, 65538, 589827, 0, 65538, 589828, 0, 65540, 589829, 0, 2, 589830, 0, 2, 589831, 0, 2, 655360, 0, 131073, 655361, 0, 5, 655362, 0, 65538, 655363, 0, 65538, 655364, 0, 65538, 655365, 0, 65538, 655366, 0, 65538, 655367, 0, 65538, 720897, 0, 131073, 720898, 0, 131074, 720899, 0, 131074, 720900, 0, 131074, 720901, 0, 131074, 720902, 0, 131074, 720903, 0, 131074 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 32, 16 )
