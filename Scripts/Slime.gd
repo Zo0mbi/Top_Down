@@ -1,0 +1,9 @@
+extends KinematicBody2D
+
+
+var speed = 100
+onready var obj = get_parent().get_node("Slime")
+
+func _physics_process(delta):
+	var dir = (obj.global_position - global_position).normalized()
+	move_and_collide(dir * speed * delta)

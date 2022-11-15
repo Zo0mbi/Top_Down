@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wooden_door_b.png-65b15270fb3968daf635837d3c3a491f.stex"
+path="res://.import/Serene_Village_16x16.png-de96015ab9a3dc72dc13f6b675bb7d9a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/mysticWood/mystic_woods_free_v0.2/sprites/tilesets/walls/wooden_door_b.png"
-dest_files=[ "res://.import/wooden_door_b.png-65b15270fb3968daf635837d3c3a491f.stex" ]
+source_file="res://Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png"
+dest_files=[ "res://.import/Serene_Village_16x16.png-de96015ab9a3dc72dc13f6b675bb7d9a.stex" ]
 
 [params]
 

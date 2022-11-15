@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wooden_door_b.png-65b15270fb3968daf635837d3c3a491f.stex"
+path="res://.import/Outside_Stuff_TILESET_B-C-D-E.png-cc36d97da5d6f0dfbf9a6d7b96469507.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/mysticWood/mystic_woods_free_v0.2/sprites/tilesets/walls/wooden_door_b.png"
-dest_files=[ "res://.import/wooden_door_b.png-65b15270fb3968daf635837d3c3a491f.stex" ]
+source_file="res://Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/RPG_MAKER_MV/Outside_Stuff_TILESET_B-C-D-E.png"
+dest_files=[ "res://.import/Outside_Stuff_TILESET_B-C-D-E.png-cc36d97da5d6f0dfbf9a6d7b96469507.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
