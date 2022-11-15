@@ -1,5 +1,6 @@
 extends Node
-
+##UTILISER EN TANT QUE SINGLETON!??!?!
+## Je crois que Oui car est un Autoload **
 var win_condition1=false
 var current_scene = null
 # Called when the node enters the scene tree for the first time.
