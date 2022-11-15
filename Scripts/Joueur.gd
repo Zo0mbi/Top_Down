@@ -8,7 +8,12 @@ var velocity = Vector2()
 var current_animation = "default"
 
 var player_moving=false
+
 onready var _animated_sprite = $AnimatedSprite
+onready var _timer = $Timer
+#Player Stat
+var hp = 10
+var dmg = 10
 
 #Methode pour sortir les inputs du joueurs
 func get_input():
@@ -31,6 +36,7 @@ func _process(delta):
 func _physics_process(_delta):
 	var direction = get_input()
 	deplacer_personnage(direction)
+	player_take_damage()
 
 #Sert a normaliser le mouvement ainsi que de mettre un simili effet de continuiter du mouvement sur un arret.
 #Modifie l'animation dependament du mouvement.
@@ -55,5 +61,13 @@ func _on_AnimatedSprite_animation_finished():
 	player_animation_manager("default")
 	if player_moving:
 		_animated_sprite.play("Run")
+		
 func player_animation_manager(animation):
 	_animated_sprite.play(animation)
+
+func player_take_damage():
+	for i in get_slide_count():
+		var collision = get_slide_collision(i)
+		if collision.collider.name=="Slime":
+			hp= hp-1
+	
